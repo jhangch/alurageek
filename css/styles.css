@@ -18,7 +18,7 @@ body {
 
 @font-face {
   font-family: '8Bit';
-  src: url('/fonts/8BIT16.TTF') format('truetype');
+  src: url('../fonts/8BIT16.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
