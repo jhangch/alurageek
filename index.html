@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X.UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/_reset.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="./js/showProducts.js" defer></script>
+  <title>Alura Geek</title>
+</head>
+
+<body>
+  <header class="header">
+    <a><img src="./assets/hearts.png" alt="logo" class="logo"></a>
+    <h1 class="title__header"> Alura Geek</h1>
+  </header>
+
+  <main class="container">
+    <section class="cards__products">
+      <div class="product__subtitle">
+        <h1>Mis productos:</h1>
+      </div>
+      <div class="list__card" data-card-products>
+      </div>
+    </section>
+
+    <section class="container__form">
+      <form class="product__form" data-form>
+        <h2 class="form__subtitle">Agregar Producto:</h2>
+        <div class="form__data">
+          <input type="text" name="nombre" placeholder="Nombre" data-name-product required>
+          <p class="paragraph__name"></p>
+
+          <input type="number" minlength="1" maxlength="100000000" name="precio" placeholder="Precio" data-price-product
+            required>
+          <p class="paragraph__price"></p>
+
+          <input type="url" name="url-imagen" placeholder="Ingresa una imagen" data-image-product required>
+          <p class="paragraph__url"></p>
+        </div>
+        <div class="buttons">
+          <button class="send__button" type="submit" data-send>Enviar</button>
+          <button class="clean__button" type="button" data-clean>Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footer__section">
+      <div class="footer__logo">
+        <img src="./assets/hearts.png" alt="logo">
+        <h2>Alura Geek</h2>
+      </div>
+      <p>Desarrollado por Jhan Herrera ✨</p>
+      <p>Alura Latam - 2024</p>
+    </section>
+  </footer>
+</body>
+
+</html>
